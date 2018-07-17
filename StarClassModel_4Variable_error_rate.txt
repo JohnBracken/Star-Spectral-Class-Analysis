@@ -1,0 +1,19 @@
+Star Model: 4 variable model stummary and error rates.
+
+
+Call:
+ randomForest(x = x, y = y, mtry = param$mtry, importance = ..1) 
+               Type of random forest: classification
+                     Number of trees: 500
+No. of variables tried at each split: 2
+
+        OOB estimate of  error rate: 26.84%
+Confusion matrix:
+     A    B     F    G     K    M  O class.error
+A 9637 1799  1459   85    38    2  9   0.2603423
+B 2262 4605   270   71    28    4 31   0.3666621
+F 1180  150 14434 1872   141   19  5   0.1891467
+G   69   46  2270 9875  3530   38  3   0.3762239
+K   16    9   125 2847 18253 1153  0   0.1852430
+M    2    1     9   33  1792 1911  0   0.4901281
+O   22  125    16   12     4    0  5   0.9728261

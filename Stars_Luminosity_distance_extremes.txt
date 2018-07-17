@@ -1,0 +1,14 @@
+The star closest to the sun is:  Proxima Centauri 
+This star is 4.224634 light years from our sun according to the HYG data.
+
+
+The star farthest from our sun is:  Hatsya
+This star is 2328.571 light years from our sun within the proper-named stars in the HYG data.
+
+
+The star with the largest luminosity in the HYG data is:  Babcock's star 
+This star has a luminosity 2558586 times stronger than our sun according to HYG data.
+
+
+The star with the smallest luminosity in the HYG data is:  Proxima Centauri 
+This star has a luminosity of 5.77032e-05 times that of our sun according to the HYG data.

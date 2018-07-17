@@ -1,0 +1,19 @@
+Star spectral class prediction model:  Color index only
+as predictor, summary of error rate.
+
+Call:
+ randomForest(x = x, y = y, mtry = param$mtry) 
+               Type of random forest: classification
+                     Number of trees: 500
+No. of variables tried at each split: 1
+
+        OOB estimate of  error rate: 26.17%
+Confusion matrix:
+      A    B     F     G     K    M O class.error
+A 10306 1192  1343   152    35    1 0   0.2089953
+B  2835 3906   353   137    29    4 7   0.4627974
+F  1010   10 14822  1808   141   10 0   0.1673501
+G    45    7  2058 10029  3672   20 0   0.3664961
+K    13    3    82  2553 18803  949 0   0.1606928
+M     2    1     9    33  2310 1393 0   0.6283351
+O    82   42    37    15     6    0 2   0.9891304

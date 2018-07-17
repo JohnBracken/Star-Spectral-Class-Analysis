@@ -1,0 +1,20 @@
+Random Forest - Predict star spectal class based
+on 4 variables:  Radial velocty, absolute magnitude,
+color index and luminosity. 
+
+80267 samples
+    4 predictor
+    7 classes: 'A', 'B', 'F', 'G', 'K', 'M', 'O' 
+
+No pre-processing
+Resampling: Cross-Validated (5 fold) 
+Summary of sample sizes: 64212, 64214, 64214, 64213, 64215 
+Resampling results across tuning parameters:
+
+  mtry  Accuracy   Kappa    
+  2     0.7326425  0.6630099
+  3     0.7295777  0.6593006
+  4     0.7262637  0.6551763
+
+Accuracy was used to select the optimal model using the largest value.
+The final value used for the model was mtry = 2.

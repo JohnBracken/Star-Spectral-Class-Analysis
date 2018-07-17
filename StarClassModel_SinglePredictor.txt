@@ -1,0 +1,17 @@
+Random Forest- Summary of single variable model to
+predict spectral class with only a single predictor, 
+the color index.
+
+80267 samples
+    1 predictor
+    7 classes: 'A', 'B', 'F', 'G', 'K', 'M', 'O' 
+
+No pre-processing
+Resampling: Cross-Validated (5 fold) 
+Summary of sample sizes: 64214, 64213, 64214, 64213, 64214 
+Resampling results:
+
+  Accuracy   Kappa    
+  0.7352337  0.6643804
+
+Tuning parameter 'mtry' was held constant at a value of 2

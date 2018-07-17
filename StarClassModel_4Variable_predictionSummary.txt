@@ -1,0 +1,33 @@
+Confusion Matrix and Statistics - 4 Variable RF prediction model for spectral class.
+
+          Reference
+Prediction    A    B    F    G    K    M    O
+         A 4054  789  670   55   13    1    1
+         B  933 1988  139   44    9    2    1
+         F  539   60 6161  821   45    2    1
+         G   30    8 1008 4178 1544   14    2
+         K    4    3   51 1208 7848  487    0
+         M    1    0    2   16  813  773    0
+         O    4   57    7    5    3    1    1
+
+Overall Statistics
+                                          
+               Accuracy : 0.7269          
+                 95% CI : (0.7222, 0.7316)
+    No Information Rate : 0.2987          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.6556          
+ Mcnemar's Test P-Value : < 2.2e-16       
+
+Statistics by Class:
+
+                     Class: A Class: B Class: F Class: G Class: K Class: M  Class: O
+Sensitivity            0.7285  0.68434   0.7665   0.6603   0.7638  0.60391 1.667e-01
+Specificity            0.9470  0.96418   0.9443   0.9072   0.9273  0.97488 9.978e-01
+Pos Pred Value         0.7261  0.63800   0.8076   0.6159   0.8174  0.48162 1.282e-02
+Neg Pred Value         0.9476  0.97068   0.9299   0.9222   0.9021  0.98454 9.999e-01
+Prevalence             0.1618  0.08446   0.2337   0.1839   0.2987  0.03721 1.744e-04
+Detection Rate         0.1179  0.05780   0.1791   0.1215   0.2282  0.02247 2.907e-05
+Detection Prevalence   0.1623  0.09059   0.2218   0.1972   0.2791  0.04666 2.268e-03
+Balanced Accuracy      0.8377  0.82426   0.8554   0.7838   0.8456  0.78939 5.822e-01
