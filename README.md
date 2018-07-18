@@ -19,3 +19,7 @@ was then used to predict spectral class on some test data and delivered a result
 around this accuracy.  None of the other potentially relevant predictor variables 
 seemed to really help out here in a prediction.  
 
+A gradient boosting model was also performed, improving model accuracy slightly to 76%. 
+This model also showed that color index was by far the most important predictor of star
+spectral class, distantly followed by luminosity.
+
