@@ -206,30 +206,26 @@ star_test <- star_model_data[-inTrain,]
 #Use cross validation to remove bias.  
 train_control <- trainControl(method="cv", number =5)
 
-#Train the random forests model on the star data. I orginally attempted to do this
+#Train a gradient boosting model on the star data. I orginally attempted to do this
 #with four predictors: radial velocity, absolute magnitude, color index and luminosity.
 #It turns out that, based on variable importance rankings, color index is actually the
-#only useful predictor of spectral class.  In fact, model accuracy improved slightly
-#when I only generated a model with just the color index predictor.
-model_rf <- train(spect_short~ci,
+#only useful predictor of spectral class. 
+model_gbm <- train(spect_short~rv+absmag+ci+lum,
                   data=star_train, trControl = train_control,
-                  method = "rf")
+                  method = "gbm")
 
 #Print the model summary
-print(model_rf)
-print(model_rf$finalModel)
+print(model_gbm)
+print(model_gbm$finalModel)
 
 #Generate and plot variable importance rankings.  This code was only used when I had
 #more than one predictor variable.
-variable_importance_rf <- varImp(model_rf)
-plot_var_rf <- plot(variable_importance_rf, 
-                    main="Predictor Variable Importance for Each Spectral Class",
-                    ylab="Predictor Variable")
-print(plot_var_rf)
+plot_var <- summary(model_gbm)
+print(plot_var)
 
 #Use the model to predict the spectral class on the test data.
-prediction_rf <- predict(model_rf, star_test)
+prediction_gbm <- predict(model_gbm, star_test)
 
 #Confusion matrix comparing the predictions with the actual spectral classes in the
 #test data.
-confusionMatrix(star_test$spect_short, prediction_rf)
+confusionMatrix(star_test$spect_short, prediction_gbm)
